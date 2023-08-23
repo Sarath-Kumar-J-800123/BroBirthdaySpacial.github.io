@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Login</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="ProfileStyleSheet.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container">
+	<div class="card">
+		<form>
+			<div class="form-group">
+				<label>Enter Your Full Name:</label>
+				<input type="text" class="form-control" id="name" name="name">
+			</div>
+			<div class="form-group">
+				<label>Enter Your Password:</label>
+				<input type="password" class="form-control" id="password" name="password">
+			</div>
+			<div class="text-center">
+				<button type="button" id="li-btn" class="btn btn-primary" onclick="login()">Login</button>
+			</div>
+		</form>
+	</div>
+</div>
+</body>
+<script type="text/javascript">
+function login()
+	{
+	name=document.getElementById("name").value
+	password=document.getElementById("password").value
+		if(name==="J Siva Kumar" && password==="sivakumarj")
+		{
+			alert("User LogIn Successfully");
+			window.location.href="profile.html";
+		}
+		else
+		{
+			alert("User LogIn Failed");
+		}
+	}
+</script>
+</html>
